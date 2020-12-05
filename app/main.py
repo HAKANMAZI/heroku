@@ -1,11 +1,17 @@
-from flask import Flask           # import flask
-app = Flask(__name__)             # create an app instance
-
-@app.route("/")                   # at the end point /
-def hello():                      # call method hello
-    return "Kalk nagi!"       # which returns "hello world"
+from flask import Flask
+app = Flask(__name__)
 
 
+@app.route("/")
+@app.route("/home")
+def home():
+    return "<h1>Home Page</h1>"
 
-if __name__ == "__main__":        # on running python app.py
-    app.run(debug=True) 
+
+@app.route("/about")
+def about():
+    return "<h1>About Page</h1>"
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
