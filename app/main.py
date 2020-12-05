@@ -1,9 +1,9 @@
 from flask import Flask           # import flask
 app = Flask(__name__)             # create an app instance
 
-@app.route("/<name>")                   # at the end point /
-def hello(name):                      # call method hello
-    return "Hello !" +name        # which returns "hello world"
+@app.route("/")                   # at the end point /
+def hello():                      # call method hello
+    return "Hello Heroku!"       # which returns "hello world"
 
 
 
