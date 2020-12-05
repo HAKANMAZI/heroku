@@ -3,7 +3,7 @@ app = Flask(__name__)             # create an app instance
 
 @app.route("/")                   # at the end point /
 def hello():                      # call method hello
-    return "Hello Heroku!"       # which returns "hello world"
+    return "Kalk nagi!"       # which returns "hello world"
 
 
 
