@@ -1,3 +1,5 @@
+from speechtotext import transcript 
+
 from flask import Flask, render_template, url_for
 app = Flask(__name__)
 
@@ -26,6 +28,11 @@ def home():
 @app.route("/about")
 def about():
     return render_template('about.html', title='About')
+
+@app.route("/speechtotext")
+def speechtotext():
+    cumle = transcript()
+    return 'dinlediğim: ' + cumle 
 
 
 if __name__ == '__main__':
