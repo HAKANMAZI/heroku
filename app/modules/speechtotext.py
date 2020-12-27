@@ -4,6 +4,7 @@ import time
 r = sr.Recognizer()
 mic = sr.Microphone()
 
+
 def transcript(transcript=''):
     with mic as source:
         r.adjust_for_ambient_noise(source)
