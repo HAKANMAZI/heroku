@@ -1,4 +1,4 @@
 flask
 gunicorn
-SpeechRecognition
+SpeechRecognition==3.8.1
 
