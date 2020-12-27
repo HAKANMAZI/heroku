@@ -1,5 +1,4 @@
 flask
 gunicorn
 SpeechRecognition==3.8.1
-app.speechtotext
 
